@@ -2,16 +2,16 @@
   display: grid;
   grid-auto-flow: row;
   justify-content: center;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(4, $card-width);
+  grid-template-rows: repeat(auto-fill, $card-height);
   gap: 48px;
 
   &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 300px;
+    width: $card-width;
+    height: $card-height;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 48px;
@@ -20,6 +20,6 @@
 
 @media (max-width: 1024px) {
   .catalog {
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, $card-width);
   }
 }
