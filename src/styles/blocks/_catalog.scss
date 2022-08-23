@@ -4,7 +4,8 @@
   justify-content: center;
   grid-template-columns: repeat(4, $card-width);
   grid-template-rows: repeat(auto-fill, $card-height);
-  gap: 48px;
+
+  gap: $catalog-gap;
 
   &__card {
     display: flex;
